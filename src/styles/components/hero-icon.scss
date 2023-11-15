@@ -1,0 +1,32 @@
+.hero-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+
+    width: rem(100px);
+    height: rem(90px);
+
+    text-align: center;
+    line-height: rem(30px);
+
+    font-size: 0;
+
+    background-image: url('/assets/img/yawn-icon.png');
+    background-size: 100%;
+
+    &--left {
+        left: rem(-230px)
+    }
+
+    &--up {
+        left: rem(-50px);
+    }
+
+    &--right {
+        left: rem(130px)
+    }
+
+    &--hit {
+        opacity: 0.3;
+    }
+}

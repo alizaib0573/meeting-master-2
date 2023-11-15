@@ -1,0 +1,102 @@
+.points {
+    position: absolute;
+    top: rem(20px);
+    right: rem(30px);
+
+    margin: 0 auto;
+    
+    color: white;
+    font-style: italic;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+
+    &.difference.positive {
+        color: #9ae708;
+        text-shadow: 0 0 rem(7px) rgba(#9ae708, 0.5);
+    }
+
+    &.difference.negative {
+        color: #de1f1b;
+        text-shadow: 0 0 rem(7px) rgba(#de1f1b, 0.5);
+    }
+}
+
+.points__sign {
+    position: relative;
+    top: rem(-10px);
+    left: rem(1px);
+    font-size: rem(20px);
+}
+
+.points__current {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    top: rem(3px);
+    font-size: rem(43px);
+}
+
+.points__title {
+    display: inline-block;
+    vertical-align: middle;
+
+    font-size: rem(20px);
+    line-height: rem(17px);
+}
+
+.points__title-line {
+    position: relative;
+    display: block;
+    left: rem(2px);
+
+    &:first-child {
+        left: rem(6px);    
+    }
+}
+
+@include mq-wide {
+    .points {
+        position: absolute;
+        top: rem(70px);
+        right: rem(80px);
+    }
+    
+    .points__sign {
+        position: relative;
+        top: rem(-10px);
+        left: rem(4px);
+        font-size: rem(39px);
+    }
+    
+    .points__current {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+    
+        top: rem(5px);
+        font-size: rem(82px);
+    }
+    
+    .points__title {
+        display: inline-block;
+        vertical-align: middle;
+    
+        font-size: rem(39px);
+        line-height: rem(31px);
+    }
+    
+    .points__title-line {
+        position: relative;
+        display: block;
+        left: rem(3px);
+    
+        &:first-child {
+            left: rem(10px);    
+        }
+    }
+}

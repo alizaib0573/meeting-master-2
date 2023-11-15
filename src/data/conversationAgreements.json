@@ -1,0 +1,48 @@
+{
+    "andrew": [
+        {
+            "start": 400,
+            "duration": 75
+        },
+        {
+            "start": 500,
+            "duration": 75
+        },
+        {
+            "start": 600,
+            "duration": 75
+        }
+    ],
+    "ava": [
+        {
+            "start": 850,
+            "duration": 75
+        },
+        {
+            "start": 950,
+            "duration": 75
+        },
+        {
+            "start": 1050,
+            "duration": 75
+        },
+        {
+            "start": 1150,
+            "duration": 75
+        }
+    ],
+    "paul": [
+        {
+            "start": 300,
+            "duration": 75
+        },
+        {
+            "start": 400,
+            "duration": 75
+        },
+        {
+            "start": 500,
+            "duration": 75
+        }
+    ]
+}

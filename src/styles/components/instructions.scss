@@ -1,0 +1,87 @@
+.instructions{
+    position: absolute;
+    bottom: rem(10px);
+
+    padding: 0 rem(10px);
+
+    color: white;
+    font-size: rem(30px);
+    position: absolute;
+    width: 100%;
+
+
+    text-align: center;
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+
+    vertical-align: middle;
+
+    pointer-events: none;
+
+    z-index: 1;
+
+    span {
+        display: inline-block;
+
+        margin: 0 rem(10px);
+        padding: rem(10px) rem(10px) rem(3px);
+
+        border: rem(2px) solid white;
+
+        vertical-align: middle;
+    }
+
+    .icon-tap {
+        position: relative;
+        display: block;
+        width: rem(180px);
+        height: rem(60px);
+        left: 0;
+        right: 0;
+
+        margin: 0 auto rem(10px);
+
+        border: rem(4px) solid #FFF;
+        border-radius: rem(10px);        
+    
+        
+        &:before {
+            position: absolute;
+            top: rem(8px);
+            left: 0;
+            right: 0;
+    
+            margin: 0 auto;
+    
+            width: 0; 
+            height: 0; 
+            border-left: 21px solid transparent;
+            border-right: 21px solid transparent;
+            
+            border-bottom: 26px solid #FFF;
+            
+            content: '';
+        }
+    
+        &:after {
+            position: absolute;
+            bottom: rem(8px);
+            left: 0;
+            right: 0;
+    
+            margin: 0 auto;
+    
+            width: rem(20px);
+            height: rem(20px);
+            
+            background-color: #FFF;
+            content: '';
+        }
+    }
+
+}
+
+@include mq-wide {
+    .instructions{
+        bottom: rem(50px);
+    }
+}

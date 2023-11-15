@@ -1,0 +1,241 @@
+.end-screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(234, 221, 197);
+    background-image: linear-gradient(to right, rgb(252, 235, 204) , rgba(234, 221, 197));
+    z-index: 12;
+}
+
+.end-screen__content {
+    position: absolute;
+    top: rem(20px);
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+.image-drink{
+    height: rem(410px);
+    width:rem(170px);
+    object-fit: cover;
+}
+.linked-in{
+    height: rem(40px);
+    width:rem(40px);
+    position: absolute;
+    margin-left: rem(540px);
+    margin-top: rem(350px);
+}
+
+.facebook-logo{
+    height: rem(40px);
+    width:rem(40px);
+    position: absolute;
+    margin-left: rem(490px);
+    margin-top: rem(350px);
+}
+
+.end-screen__modal {
+    position: relative;
+    backdrop-filter: blur(2px);
+
+    padding: rem(40px) rem(20px);
+    width: calc(100% - #{rem(20px)});
+
+    color:rgba(22, 95, 67) ;
+    text-align: center;
+
+    border-radius: rem(5px);
+
+    &--failure {
+        .heading {
+            font-style: italic;
+            margin: 0 0 rem(10px);
+            font-size: rem(100px);
+
+            text-shadow: 0 0 rem(1px) rgba(255, 255, 255, 0.6);
+
+        }
+
+        .heading__sub__brown {
+            color: #c69c6d;
+            font-size: rem(40px);
+        }
+
+        .paragraph {
+            margin: 0 0 rem(30px);
+            font-size: rem(24px);
+        }
+
+        .paragraph__line {
+            display: block;
+            color:rgba(22, 95, 67) ;
+        }
+
+        .won__footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .share {
+                margin-bottom: rem(10px);
+            }
+        }
+    }
+
+    &--success {
+        .heading {
+            margin: 0 0 rem(10px);
+            font-size: rem(50px);
+
+            span {
+                display: block;
+                margin: 0 0 rem(1px);
+                font-size: rem(30px);
+            }
+        }
+
+        .paragraph {
+            margin: 0 0 rem(30px);
+            font-size: rem(24px);
+        }
+
+        .won__footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            .share {
+                margin-bottom: rem(10px);
+            }
+        }
+    }
+}
+
+@include mq-wide {
+    .end-screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .end-screen__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        width: 100%;
+        height: 100%;
+    }
+    
+    .end-screen__modal {
+        position: relative;
+        backdrop-filter: blur(2px);
+    
+        padding: rem(40px) rem(45px);
+        min-width: rem(500px);
+        width: auto;
+    
+        color:rgba(22, 95, 67) ;
+        text-align: center;
+    
+        border-radius: rem(20px);
+    
+        &--failure {
+            .heading {
+                font-style: italic;
+                margin: 0 0 rem;
+                font-size: rem(100px);
+    line-height: 0.9;
+                text-shadow: 0 0 rem(1px) rgba(255, 255, 255, 0.6);
+            }
+    
+            .heading__sub__brown {
+                color: #c69c6d;
+                font-size: rem(40px);
+            }
+            .linked-in{
+                height: rem(40px);
+                width:rem(40px);
+                position: absolute;
+                margin-left: rem(540px);
+                margin-top: rem(400px);
+            }
+            
+            .facebook-logo{
+                height: rem(40px);
+                width:rem(40px);
+                position: absolute;
+                margin-left: rem(490px);
+                margin-top: rem(400px);
+            }
+            
+            .paragraph {
+                margin: 0 0 rem;
+                font-size: rem(30px);
+            }
+    
+            .won__footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+    
+                .share {
+                    margin-right: rem(80px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        &--success {
+            .heading {
+                margin: 0 0 rem(1px);
+                font-size: rem(160px);
+    
+                span {
+                    display: block;
+                    margin: 0 0 rem(1px);
+                    font-size: rem(60px);
+                }
+            }
+    
+            .paragraph {
+                margin: 0 0 rem(50px);
+                font-size: rem(30px);
+            }
+    
+            .won__footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+    
+                .share {
+                    margin-right: rem(80px);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }   
+}

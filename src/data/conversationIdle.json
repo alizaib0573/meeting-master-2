@@ -1,0 +1,74 @@
+{
+    "rebecca": [
+        {
+            "start": 0,
+            "duration": 75
+        },
+        {
+            "start": 100,
+            "duration": 75
+        },
+        {
+            "start": 200,
+            "duration": 75
+        }
+    ],
+    "andrew": [
+        {
+            "start": 0,
+            "duration": 75
+        },
+        {
+            "start": 100,
+            "duration": 75
+        },
+        {
+            "start": 200,
+            "duration": 75
+        },
+        {
+            "start": 300,
+            "duration": 75
+        }
+    ],
+    "ava": [
+        {
+            "start": 250,
+            "duration": 75
+        },
+        {
+            "start": 350,
+            "duration": 75
+        },
+        {
+            "start": 450,
+            "duration": 75
+        },
+        {
+            "start": 550,
+            "duration": 75
+        },
+        {
+            "start": 650,
+            "duration": 75
+        },
+        {
+            "start": 750,
+            "duration": 75
+        }
+    ],
+    "paul": [
+        {
+            "start": 0,
+            "duration": 75
+        },
+        {
+            "start": 100,
+            "duration": 75
+        },
+        {
+            "start": 200,
+            "duration": 75
+        }
+    ]
+}

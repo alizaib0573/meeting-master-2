@@ -1,0 +1,12 @@
+{
+    "ava": [
+        {
+            "start": 0,
+            "duration": 100
+        },
+        {
+            "start": 125,
+            "duration": 100
+        }
+    ]
+}

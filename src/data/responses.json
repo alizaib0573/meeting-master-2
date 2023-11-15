@@ -1,0 +1,12 @@
+[
+  {
+    "type": "appease",
+    "label": "Engage",
+    "isPositive": true
+  },
+  {
+    "type": "disengage",
+    "label": "Ignore",
+    "isPositive": false
+  }
+]

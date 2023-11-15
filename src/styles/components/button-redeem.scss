@@ -1,0 +1,92 @@
+.buttons-redeem {
+    position: absolute;
+    bottom: 50px;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.button-redeem__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 10px auto;
+
+    &--labels {
+        position: absolute;
+        bottom: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.buttons-redeem__drop-area {
+    left: rem(-375px);
+
+    flex: 1 1 100%;
+
+    width: rem(142px);
+    height: rem(50px);
+    margin: 0 rem(5px);
+
+    color: white;
+    font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+    font-size: rem(30px);
+    font-style: italic;
+    text-align: center;
+    line-height: rem(54px);
+
+    background-color: rgba(grey, 0.5);
+    border: 2px solid white;
+    border-radius: rem(6px);
+
+    &.is-highlighted {
+        background-color: rgba(yellow, 0.5);
+    }
+}
+
+.buttons-redeem__label {
+    left: rem(-375px);
+
+    flex: 1 1 100%;
+
+    width: rem(142px);
+    height: rem(50px);
+    margin: 0 rem(5px);
+
+    color: rgba(black, 0.5);
+    font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+    font-size: rem(30px);
+    font-style: italic;
+    text-align: center;
+    line-height: rem(54px);
+
+    background-color: rgba(grey, 0.5);
+    border: 2px solid white;
+    border-radius: rem(6px);
+
+}
+
+.buttons-redeem__button-drag {
+    left: rem(-375px);
+
+    flex: 1 1 100%;
+
+    width: rem(142px);
+    height: rem(50px);
+    margin: 0 rem(5px);
+
+    color: black;
+    font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+    font-size: rem(30px);
+    font-style: italic;
+    text-align: center;
+    line-height: rem(54px);
+
+    background-color: white;
+    border: 2px solid black;
+    border-radius: rem(6px);
+
+    z-index: 11;
+}

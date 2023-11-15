@@ -1,0 +1,74 @@
+.awake {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &--success {
+        .awake__target {
+            border-color: #82d1eb;
+            box-shadow: 0 0 rem(15px) rgba(#82d1eb, 0.7);
+            &:after {
+                box-shadow: inset 0 0 rem(15px) rgba(#82d1eb, 0.7);
+            }
+        }
+
+        .awake__target-progress {
+            background-color: #82d1eb;
+        }
+    }
+}
+
+.awake__target {
+    position: absolute;
+    top: rem(-50px);
+    left: rem(-75px);
+
+    width: rem(100px);
+    height: rem(100px);
+
+    border-radius: 50%;
+    border: 3px solid #ff557f;
+    box-shadow: 0 0 rem(15px) rgba(#ff557f, 0.7);
+
+    &:after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: inset 0 0 rem(15px) rgba(#ff557f, 0.7);
+        content: '';
+    }
+}
+
+.awake__target-progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: #ff557f;
+}
+
+.awake__indicator {
+    position: absolute;
+    top: rem(-50px);
+    left: rem(-50px);
+
+    width: rem(100px);
+    height: rem(100px);
+
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 0 rem(15px) rgba(white, 0.7);
+
+    &:after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: inset 0 0 rem(15px) rgba(white, 0.7);
+        content: '';
+    }
+}

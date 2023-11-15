@@ -1,0 +1,119 @@
+.copy-pull-up {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: rem(10px);
+
+    width: 100%;
+
+    font-size: rem(40px);
+    color: #de1f1b;
+    text-align: center;
+
+    pointer-events: none;
+
+    opacity: 0;
+}
+
+.copy-pull-up__icon {
+    position: relative;
+    display: inline-block;
+    width: rem(80px);
+    height: rem(32px);
+    border: rem(2px) solid #de1f1b;
+    border-radius: rem(10px);
+    vertical-align: top;
+
+    margin-right: rem(10px);
+
+    &:before {
+        position: absolute;
+        top: rem(5px);
+        left: 0;
+        right: 0;
+
+        margin: 0 auto;
+
+        width: 0; 
+        height: 0; 
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        
+        border-bottom: 13px solid #de1f1b;
+        
+        content: '';
+    }
+
+    &:after {
+        position: absolute;
+        bottom: rem(5px);
+        left: 0;
+        right: 0;
+
+        margin: 0 auto;
+
+        width: rem(10px);
+        height: rem(10px);
+        
+        background-color: #de1f1b;
+        content: '';
+    }
+}
+
+.copy-pull-up__copy {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@include mq-wide {
+    .copy-pull-up {
+        bottom: rem(50px);   
+        font-size: rem(80px);
+    }
+
+    .copy-pull-up__icon {
+        position: relative;
+        display: inline-block;
+        width: rem(180px);
+        height: rem(60px);
+        border: rem(4px) solid #de1f1b;
+        border-radius: rem(10px);
+        vertical-align: top;
+    
+        margin-right: rem(10px);
+    
+        &:before {
+            position: absolute;
+            top: rem(8px);
+            left: 0;
+            right: 0;
+    
+            margin: 0 auto;
+    
+            width: 0; 
+            height: 0; 
+            border-left: 21px solid transparent;
+            border-right: 21px solid transparent;
+            
+            border-bottom: 26px solid #de1f1b;
+            
+            content: '';
+        }
+    
+        &:after {
+            position: absolute;
+            bottom: rem(8px);
+            left: 0;
+            right: 0;
+    
+            margin: 0 auto;
+    
+            width: rem(20px);
+            height: rem(20px);
+            
+            background-color: #de1f1b;
+            content: '';
+        }
+    }
+}

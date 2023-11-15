@@ -1,0 +1,43 @@
+.rounds {
+    position: absolute;
+    top: rem(80px);
+    // left: 0;
+    right: rem(60px);
+
+    margin: 0 auto;
+
+    width: rem(110px);
+    
+    color: white;
+    font-size: rem(30px);
+    font-style: italic;
+
+    z-index: 10;
+
+    pointer-events: none;
+
+    white-space: nowrap;
+}
+
+.rounds__title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rounds__current {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: rem(40px);
+    width: rem(20px);
+    text-align: right;
+}
+
+.rounds__divider {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rounds__max {
+    display: inline-block;
+    vertical-align: middle;
+}

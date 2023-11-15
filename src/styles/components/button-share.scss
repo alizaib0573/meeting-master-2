@@ -1,0 +1,41 @@
+.button-share {
+    display: block;
+
+    width: rem(26px);
+    height: rem(26px);
+
+    font-size: 0;
+    
+    background-size: 100%;
+    border-radius: 2px;
+
+    &--linkedin {
+        background-image: url('/assets/img/icon-linkedin-2.jpg');
+    }
+
+    &--facebook {
+        background-image: url('/assets/img/icon-facebook-2.jpg');
+    }
+}
+
+@include mq-wide {
+    .button-share {
+        display: block;
+    
+        width: rem(36px);
+        height: rem(36px);
+    
+        font-size: 0;
+        
+        background-size: 100%;
+        border-radius: 2px;
+    
+        &--linkedin {
+            background-image: url('/assets/img/icon-linkedin-2.jpg');
+        }
+    
+        &--facebook {
+            background-image: url('/assets/img/icon-facebook-2.jpg');
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.head-nodding {
+    position: absolute;
+    top: rem(80px);
+    left: rem(80px);
+
+    width: rem(150px);
+    height: rem(123px);
+
+    canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "rebecca": [
+        {
+            "start": 300,
+            "duration": 100
+        },
+        {
+            "start": 425,
+            "duration": 100
+        },
+        {
+            "start": 550,
+            "duration": 100
+        },
+        {
+            "start": 675,
+            "duration": 100
+        },
+        {
+            "start": 800,
+            "duration": 100
+        },
+        {
+            "start": 925,
+            "duration": 100
+        },
+        {
+            "start": 1050,
+            "duration": 100
+        }
+    ],
+    "andrew": [
+        {
+            "start": 1050,
+            "duration": 100
+        },
+        {
+            "start": 1175,
+            "duration": 100
+        },
+        {
+            "start": 1300,
+            "duration": 100
+        },
+        {
+            "start": 1425,
+            "duration": 100
+        },
+        {
+            "start": 1550,
+            "duration": 100
+        },
+        {
+            "start": 1675,
+            "duration": 100
+        },
+        {
+            "start": 1800,
+            "duration": 100
+        }
+    ]
+}

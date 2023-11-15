@@ -1,0 +1,35 @@
+{
+  "resources": [
+    "my_apologies_i_got_confused.ogg",
+    "my_apologies_i_got_confused.m4a",
+    "my_apologies_i_got_confused.mp3",
+    "my_apologies_i_got_confused.ac3"
+  ],
+  "spritemap": {
+    "Apologies ": {
+      "start": 0,
+      "end": 0.6677777777777778,
+      "loop": false
+    },
+    "Confused": {
+      "start": 2,
+      "end": 2.7826984126984127,
+      "loop": false
+    },
+    "Got": {
+      "start": 4,
+      "end": 4.214331065759637,
+      "loop": false
+    },
+    "I": {
+      "start": 6,
+      "end": 6.186371882086168,
+      "loop": false
+    },
+    "My": {
+      "start": 8,
+      "end": 8.345850340136055,
+      "loop": false
+    }
+  }
+}

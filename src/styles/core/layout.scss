@@ -1,0 +1,45 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); // remove highlight color
+}
+
+* {
+    @include unselectable;
+}
+
+html, body {
+    @include text-rendering;
+
+    margin: 0;
+
+    font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+html {
+    @include fluidBaseRem(375, 414, 16, 17)
+}
+
+@media (min-width: 414px) { 
+    html {
+        font-size: 17px;
+    }
+}
+
+@include mq-wide {
+    html {
+        @include fluidBaseRem(1024, 1280, 12, 15)
+    }
+}
+
+.dg.ac {
+    z-index: 20 !important;
+}

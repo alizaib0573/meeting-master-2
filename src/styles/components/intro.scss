@@ -1,0 +1,208 @@
+@keyframes buttonInAnimation {
+    from {
+        transform: translate(0, 15px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+
+.page-intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: black;
+}
+
+.page-intro__video {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 200%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    background-color: black;
+}
+
+.page-intro__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    .logo-mountain-dew {
+        position: relative;
+        left: rem(20px);
+
+        margin-bottom: rem(-8px);
+
+        width: rem(100px);
+        height: auto;
+
+        z-index: 1;
+
+        will-change: transform;
+
+        opacity: 0;
+    }
+
+    .heading {
+        position: relative;
+        left: rem(40px);
+
+        margin: 0;
+        max-width: rem(300px);
+
+        color: white;
+        font-size: rem(100px);
+        line-height: rem(80px);
+        text-transform: uppercase;
+
+        text-shadow: rem(2px) rem(2px) rem(8px) #b3e64a;
+    }
+
+    .heading__line {
+        display: block;
+        opacity: 0;
+    }
+
+    .button-intro {
+        display: inline-block;
+        position: relative;
+
+        left: rem(41px);
+
+        padding: 0 rem(12px) 0 rem(10px);
+
+        min-width: rem(154px);
+        height: rem(50px);
+
+        color: white;
+        font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+        font-size: rem(30px);
+        font-style: italic;
+        text-align: center;
+        line-height: rem(54px);
+
+        background-color: #448ddf;
+        border: 2px solid white;
+        border-radius: rem(6px);
+
+        vertical-align: top;
+
+        &:hover {
+            background-color: #2972c4;
+        }
+
+        &:visited {
+            color: white;
+        }
+
+        animation: buttonInAnimation 0.15s ease-out;
+    }
+
+    .intro-error {
+        display: inline-block;
+        position: relative;
+
+        left: rem(104px);
+        padding: 0 rem(12px) 0 rem(10px);
+
+        height: rem(50px);
+
+        color: white;
+        font-family: 'AmericanCaptain', Arial, Helvetica, sans-serif;
+        font-size: rem(20px);
+        font-style: italic;
+        text-align: center;
+        line-height: rem(50px);
+
+        background-color: red;
+        border: 2px solid white;
+        border-radius: rem(6px);
+
+        vertical-align: top;
+    }
+
+    .preloader {
+        display: inline-block;
+        position: relative;
+
+        left: rem(41px);
+
+        color: white;
+        font-size: 24px;
+
+        height: rem(50px);
+        opacity: 0;
+    }
+}
+
+@include mq-wide {
+    .page-intro__video {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 100%;
+        height: 100%;
+    
+        object-fit: cover;
+    
+        opacity: 0;
+    
+        background-color: black;
+    }
+
+    .page-intro__content {
+        .logo-mountain-dew {
+            left: rem(60px);
+            margin-bottom: rem(-8px);
+            width: rem(180px);
+        }
+    
+        .heading {
+            position: relative;
+            left: rem(100px);
+
+            margin: 0;
+            max-width: rem(600px);
+
+            color: white;
+            font-size: rem(200px);
+            line-height: rem(160px);
+            text-transform: uppercase;
+
+            text-shadow: rem(2px) rem(2px) rem(8px) #b3e64a;
+        }
+
+        .button-intro {    
+            left: rem(104px);
+        }
+
+        .preloader {    
+            left: rem(104px);
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.countdown-clock {
+    position: absolute;
+    bottom: rem(100px);
+    left: 0;
+    right: 0;
+
+    height: rem(80px);
+    width: rem(80px);
+
+    margin: 0 auto;
+
+    z-index: 10;
+
+    &__redeem {
+        bottom: rem(210px);
+    }
+
+    &--sleepy {
+        bottom: rem(190px);
+    }
+}
+
+.countdown-clock__number {
+    position: absolute;
+    top: rem(9px);
+    left: rem(-6px);
+
+    height: 100%;
+    width: 100%;
+    
+    color: white;
+    font-size: rem(60px);
+    text-align: center;
+    line-height: rem(80px);
+    font-style: italic;
+}
+
+.countdown-clock__canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+@include mq-wide {
+    .countdown-clock {
+        bottom: rem(150px);
+
+        height: rem(100px);
+        width: rem(100px);
+
+        &--sleepy {
+            bottom: rem(210px);
+        }
+    }
+
+    .countdown-clock__number {
+        top: rem(2px);
+        left: rem(-6px);
+        font-size: rem(70px);
+        line-height: rem(110px);
+    }
+}

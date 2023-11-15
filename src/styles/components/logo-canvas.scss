@@ -1,0 +1,25 @@
+.logo-canvas {
+    position: absolute;
+    top: rem(15px);
+    left: rem(-4px);
+
+    width: rem(140px);
+    height: rem(79px);
+
+    canvas {
+        position: relative;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+@include mq-regular {
+    .logo-canvas {
+        position: absolute;
+        top: rem(20px);
+        left: 0;
+
+        width: rem(240px);
+        height: rem(135px);
+    }
+}
