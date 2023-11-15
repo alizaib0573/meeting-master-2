@@ -52,7 +52,7 @@
     padding: rem(40px) rem(20px);
     width: calc(100% - #{rem(20px)});
 
-    color:rgba(22, 95, 67) ;
+    color:white ;
     text-align: center;
 
     border-radius: rem(5px);
@@ -79,7 +79,8 @@
 
         .paragraph__line {
             display: block;
-            color:rgba(22, 95, 67) ;
+            // color:rgba(22, 95, 67) ;
+            color: white;
         }
 
         .won__footer {
@@ -156,7 +157,7 @@
         min-width: rem(500px);
         width: auto;
     
-        color:rgba(22, 95, 67) ;
+        color:white ;
         text-align: center;
     
         border-radius: rem(20px);
