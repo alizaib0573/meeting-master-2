@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Ahiko';
+    src: url('/assets/fonts/Ahkio-W00-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 .end-screen {
     position: absolute;
     top: 0;
@@ -5,6 +13,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    font-family: 'Ahiko';
+    font-weight: bold;
     background-color: rgba(234, 221, 197);
     background-image: linear-gradient(to right, rgb(252, 235, 204) , rgba(234, 221, 197));
     z-index: 12;
