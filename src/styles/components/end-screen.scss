@@ -68,9 +68,11 @@
 
     &--failure {
         .heading {
-            font-style: italic;
+            font-style:normal;
+            font-family: 'din';
+            font-weight: bold;
             margin: 0 0 rem(10px);
-            font-size: rem(100px);
+            font-size: rem(70px);
 
             text-shadow: 0 0 rem(1px) rgba(255, 255, 255, 0.6);
 
