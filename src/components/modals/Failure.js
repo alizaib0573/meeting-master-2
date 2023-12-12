@@ -36,7 +36,7 @@ export default class Failure extends Component {
 
                 {/* <p ref={this.ui.body} className="heading">Give yourself a</p> */}
 
-                <img ref={this.ui.logo} className="image-drink"  src="assets/img/image-drink-2.png" width="80" height="447" alt="Mountain Dew" />
+                <img ref={this.ui.logo} className="image-drink"  src="assets/img/image-drink-2.png" width="80" height="500" alt="Mountain Dew" />
                 <a href="#">
                 <img ref={this.ui.logo} className="image-drink linked-in"  src="assets/img/link-logo.png" width="40" height="20" alt="linked-in" />
                 </a>

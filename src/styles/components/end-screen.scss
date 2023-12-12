@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Ahiko';
-    src: url('../../../public/assets/fonts/Ahkio-W00-Bold.ttf') format('ttf');
+    font-family: 'din';
+    src: url('/public/assets/fonts/DINBold.otf') format('otf');
     font-weight: bold;
     font-style: normal;
 }
@@ -15,7 +15,7 @@
     overflow: hidden;
     
     background-color: rgba(213, 78, 129);
-    background-image: linear-gradient(to right, rgb(252, 235, 204) , rgba(234, 221, 197));
+    background-image: linear-gradient(to right, rgb(213, 78, 129) , rgb(212, 55, 115));
     z-index: 12;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .image-drink{
-    height: rem(410px);
+    height: rem(450px);
     width:rem(170px);
     object-fit: cover;
 }
@@ -88,11 +88,11 @@
 
         .paragraph__line {
             display: block;
-            color:rgba(22, 95, 67) ;
+            color:white ;
             letter-spacing: 0.5;
             font-weight: bold;
-            font-family: 'Ahiko';
-font-weight: bold;
+            font-family: 'din';
+            font-style: normal;
         }
 
         .won__footer {
